@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Making for Makers &mdash; Monki Gras 2013</title>
+
+		<meta name="description" content="">
+		<meta name="author" content="Mazz Mosley &amp; Nick Stenning">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/serif.css" id="theme">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+
+		<div class="reveal">
+      <div class="fullscreen-bg">
+      </div>
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+          <h2>Making tools for makers</h2>
+
+          <hr class="pad">
+
+					<h2>One size does not fit all</h2>
+				</section>
+
+        <section 
+          class="fullscreen"
+          style="background-image: url(img/sirfrenchie_3469442002.jpg);">
+
+          <aside class="notes">
+            <p>
+              Imagine that you are a violin maker. You make the most beautiful,
+              resonant instruments -- the best sounding violins in the world.
+            </p>
+
+            <p>
+              Now imagine that all the tradesmen you know suddenly disappear.
+              The timber merchant you buy your wood from: gone. The wire maker
+              you buy wire from to make your strings. The man down the road
+              who sells varnish. All of them are no more. What's more, you
+              can't find anyone else who makes these things. The entire supply
+              chain for your violin making business is gone. But you think
+              making violins is really important, so you set about learning
+              their trades.
+            </p>
+          </aside>
+
+
+        </section>
+
+        <section 
+          class="fullscreen"
+          style="background-image: url(img/violin-making.png);">
+
+          <aside class="notes">
+            <p>
+              <em><strong>TODO:</strong> write a short narrative through this.</em>
+            </p>
+
+            <p>
+              The regress isn't endless, but it goes a long way back, and it
+              would take several lifetimes to acquire all the necessary
+              skills. And even if you managed it, how much time would you have
+              left to spend obsessing over what really mattered to you: the
+              timbre and tone of your handmade instruments?
+            </p>
+
+            <p>
+              What about a field you probably know more about? How many of you
+              have ever written JavaScript?
+            </p>
+          </aside>
+        </section>
+
+        <section 
+          class="fullscreen background-contain"
+          style="background-image: url(img/javascript.png);">
+
+          <aside class="notes">
+            If you write JavaScript, you probably know something about the DOM
+            programming model, built into every browser. Each browser runs on
+            an Operating System which has its heart a kernel, which is almost
+            certainly written in a programming language called C, and compiled
+            with a C compiler: a large and very clever program such as GCC, or
+            the IBM C compiler. That C compiler has a detailed understanding
+            of the machine code understood by the particular processor in your
+            computer. The machine code itself triggers the action of thousands
+            of electronic components inside the processor. Each of these
+            components may include hundreds of thousands of transistors. To
+            understand a transistor you need a decent understanding of
+            semiconductor physics, which in turn requires a not inconsiderable
+            knowledge of...
+          </aside> 
+        </section>
+
+        <section 
+          class="fullscreen background-contain"
+          style="background-image: url(img/quantum-mechanics.jpg);">
+
+          <h1 class="thecrazy">QUANTUM MECHANICS</h1>
+
+          <aside class="notes">
+            <p>
+              I asked you how many of you had ever written any JavaScript. How
+              many of you have a firm grasp of quantum mechanics?
+            </p>
+
+            <p>
+              But that's incredible, isn't it? JavaScript *couldn't exist*
+              unless someone, at some point, understood quantum mechanics.
+            </p>
+
+            <p>So how do we ever get anything done?</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2>The Black Box</h2>
+
+          <aside class="notes">
+            <p>
+              The answer is Black Box Abstraction: the process of wrapping
+              complex things up into a box that hides most of the details of
+              their construction, and idealises their behaviour so that you
+              can reason about them.
+            </p>
+
+            <p>
+              Black Box Abstraction is *everywhere* in the technological
+              world. Assembly language is a BBA. Functions in languages like C
+              are a BBA. Object-oriented programming is a BBA. Infrastructure
+              as a Service is a BBA. Every single API ever written is a BBA.
+            </p>
+
+            <p>
+              Except SOAP, which is the only known abstraction that's more
+              complicated than the system it represents.
+            </p>
+
+            <p>
+              Black Box Abstractions allow you to reason about systems of
+              unreasonable complexity. The BBA is *the* central paradigm for
+              technological advance. As soon as a technology or process can be
+              packaged up in a black box through which it exposes a small but
+              useful fraction of its inner complexity, its users can
+              concentrate on *using* it, rather than trying to understand how
+              it was made.
+            </p>
+          </aside>
+        </section>
+
+        <section>
+          <blockquote>
+            The user API is all that matters.<br>
+            Everything else is secondary.
+          </blockquote>
+          <p class="citation">&mdash; Kenneth Reitz</p>
+
+          <aside class="notes">
+            <p>
+              Designing black box abstractions, or, designing user APIs, to
+              use a language that developers probably understand better, is,
+              to my mind, the most important problem in software development
+              that's unlikely to ever get any easier.
+            </p>
+
+            <p>
+              But you can make it easier, and Mazz is going to talk to you
+              about how we think you *can* make it easier &mdash; not easy,
+              but easier.
+            </p>
+          </aside>
+        </section>
+
+        <!-- ================================================== -->
+
+        <section>
+          <h2>Video clip</h2>
+        </section>
+
+        <section>
+          <h2>Team selection</h2>
+
+          <aside class="notes">
+            What’s great about that clip from Ocean’s 11, aside from it being
+            an awesome film, is it helps demonstrate the point we’re making.
+            When GC asks BP what he thinks, BP doesn’t reel off that he needs
+            10 identical BP. He recognises for a successful, v.challenging
+            heist, it’s going to need a carefully balanced MIX of skillsets.
+            The right number of carefully balanced skillset, hence the one
+            more and making it 11.
+          </aside>
+        </section>
+
+        <section>
+          <ul>
+            <li>George Clooney (Danny)</li>
+            <li>Tom Loosemore</li>
+            <li>James Aylett</li>
+            <li>???</li>
+          </ul>
+
+          <aside class="notes">
+            The team wouldn’t have been brought together without GC,
+            recognising how important it is to assemble a great team and doing
+            so is a skill in its own right. The same is true at GDS. Without
+            Tom Loosemore putting together the initial team who did the beta
+            for Gov.uk, there’d have been no real gov.uk. James Aylett, my
+            friend and ex-boss(twice) as a CTO understood this and pulled
+            together a team of developers with not just with a variety of
+            skillsets but from different backgrounds. With great diversity
+            comes great collective intelligence and power/ability.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Understanding variety of depth of expertise</h2>
+
+          <aside class="notes">
+            Building things is hard. It’s important to take the time to really
+            understand what the right level of expertise your team or company
+            needs, whether that’s building software, brewing beer or printing
+            a steam train. You don’t have to understand all of the details,
+            understand enough which bits are critical that need some level of
+            pre-existing experience and which bits there’s room to grow or
+            consult others for advice. It’s a balance between ideal and
+            pragmatic. You’ve got to find the edges of the blackbox and adapt
+            accordingly or hire people that will and then trust them to go do
+            that.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Rockstars need not apply</h2>
+
+          <aside class="notes">
+            Let’s say you’ve got to build something quickly, I can see the
+            allure of the silver bullet that if only you had 10 rockstar
+            developers you’d get it done faster, stronger, better. Sorry
+            folks, that’s just not true. I’m not saying that 10 novices are
+            better than 1 expert, I’m saying that you need a diverse mix. If
+            the team doesn’t play well together, you’re fucked. If you don’t
+            put trust in the people you’ve chosen, you’re fucked. If you have
+            a team full of identical people with little diversity, you’re
+            fucked. Put your faith in rockstars and you’re fucked.
+          </aside>
+        </section>
+
+        <section>
+          <h2>User needs a Great Team</h2>
+
+          <aside class="notes">
+            Many companies talk about that it’s “all about the team”, few
+            actually live by that. Whether you’re making, selling,
+            maintaining, developing or pulling off a heist. They all need good
+            people. Only by the power of greyskull, no wait, power of
+            collective intelligence of good people make a great team.
+          </aside>
+        </section>
+
+        <section>
+          <h2>When it goes wrong?</h2>
+
+          <aside class="notes">
+            What happens if you don’t spend the time to make a great team?
+            Come and talk to me in the pub afterwards and I can tell you some
+            real life examples of the horror when it all goes wrong.
+          </aside>
+        </section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+        rollingLinks: false,
+        
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
