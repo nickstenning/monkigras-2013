@@ -13,7 +13,7 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/serif.css" id="theme">
+		<link rel="stylesheet" href="css/theme/gds.css" id="theme">
 		<link rel="stylesheet" href="css/custom.css">
 
 		<!-- For syntax highlighting -->
@@ -47,21 +47,27 @@
           class="fullscreen"
           style="background-image: url(img/sirfrenchie_3469442002.jpg);">
 
+          <p class="attribution light"><a href="http://www.flickr.com/photos/sirfrenchie/3469442002/">http://www.flickr.com/photos/sirfrenchie/3469442002/</a></p>
+
           <aside class="notes">
             <p>
-              Imagine that you are a violin maker. You make the most beautiful,
-              resonant instruments -- the best sounding violins in the world.
+              Imagine, for a moment, that you are a violin maker. Antonio
+              Stradivari, or, if you like, Giuseppe Guarneri. You are a
+              craftsman with an immense knowledge of your art, and years upon
+              years of experience.
             </p>
 
             <p>
-              Now imagine that all the tradesmen you know suddenly disappear.
-              The timber merchant you buy your wood from: gone. The wire maker
-              you buy wire from to make your strings. The man down the road
-              who sells varnish. All of them are no more. What's more, you
-              can't find anyone else who makes these things. The entire supply
-              chain for your violin making business is gone. But you think
-              making violins is really important, so you set about learning
-              their trades.
+              What would happen if all the tradesmen you knew suddenly
+              disappeared? The timber merchant you buy your wood from: gone.
+              The wire maker you buy wire from to make your strings and the
+              man down the road who sells varnish. All of them are no more.
+            </p>
+
+            <p>
+              In a flash of horror, you suddenly realise the immense chain of
+              resources and trades that you depended upon for your livelihood
+              as a luthier.
             </p>
           </aside>
 
@@ -73,25 +79,29 @@
 
           <aside class="notes">
             <p>
-              <!-- color a path -->
-              <em><strong>TODO:</strong> write a short (linear) narrative through this.</em>
+              Let's pick just a single component of your violins: the sides of
+              the violin, or "ribs". These are usually made by heat bending
+              strips of hardwood -- typically maple. Before the small blocks
+              of maple get to you, they have been attended by the skills of an
+              entire industry: a sawyer at a lumber yard, who turns trees into
+              planks and blocks. A lumberjack who felled the tree. But the
+              lumberjack uses an axe, which requires an axemaker or a
+              blacksmith to forge the axe head. All of these are highly
+              skilled trades, requiring years of training and practice. No one
+              person could ever hope to succeed in all of them simultaneously.
+              Even if you somehow managed it, how much time would you have
+              left to spend on what really mattered? The sound of your
+              violins.
             </p>
 
             <p>
-              It would take several lifetimes to acquire all the necessary
-              skills. And even if you somehow managed it, how much time would you have
-              left to spend on what really mattered? The sound of your violins.
+              After all, as a violinmaker, you exist to serve violinists, and
+              through them, the audience.
             </p>
 
             <p>
-              As a violinmaker, you exist to serve violinists, and through
-              them, the audience.
-            </p>
-
-            <p>
-              We'll come back to violins later. What about a field you
-              probably know more about? How many of you have ever written
-              JavaScript?
+              We'll come back to violins. What about a field you probably know
+              more about? How many of you have ever written JavaScript?
             </p>
           </aside>
         </section>
@@ -105,12 +115,12 @@
             programming model, built into every browser. Each browser runs on
             an Operating System which has its heart a kernel, which is almost
             certainly written in a programming language called C, and compiled
-            with a C compiler: a large and very clever program such as GCC, or
-            the IBM C compiler. That C compiler has a detailed understanding
-            of the machine code understood by the particular processor in your
-            computer. The machine code itself triggers the action of thousands
-            of electronic components inside the processor. Each of these
-            components may include hundreds of thousands of transistors. To
+            with a C compiler: a large and very clever program such as GCC.
+            That C compiler has a detailed understanding of the machine code
+            understood by the particular processor in your computer. The
+            machine code itself triggers the action of thousands of electronic
+            components inside the processor. Each of these components may
+            include hundreds of thousands or millions of transistors. To
             understand a transistor you need a decent understanding of
             semiconductor physics, which in turn requires a not inconsiderable
             knowledge of...
@@ -147,14 +157,13 @@
         </section>
 
         <section>
-          <h2>The Black Box</h2>
-
+          <img src="img/black-box.png" width="800px">
           <aside class="notes">
             <p>
               The answer is Black Box Abstraction: the process of wrapping
-              complex things up into a box that hides most of the details of
-              their construction, and idealises their behaviour so that you
-              can reason about them.
+              complex or complicated things up into a box that has pipes to
+              get stuff into it, and pipes to get stuff out of it, but which
+              hides the full complexity of its internal machinery.
             </p>
 
             <p>
@@ -162,7 +171,8 @@
               know how to make an axe, but he has commercial relationships
               with people who do. And none of the complexity of forestry or
               axemaking leaks into those commercial relationships. So he
-              doesn't have to worry.
+              doesn't have to worry about these issues, and can concentrate on
+              what he's good at.
             </p>
 
             <p>
@@ -194,14 +204,18 @@
           class="fullscreen"
           style="background-image: url(img/inside_the_box.jpg);">
 
-          <!--h2>How do we make a successful box?</h2-->
-          <!-- pic attribution: http://www.flickr.com/photos/scarygami/4244831459/ -->
+          <p class="attribution light"><a href="http://www.flickr.com/photos/scarygami/4244831459/">http://www.flickr.com/photos/scarygami/4244831459/</a></p>
+
           <aside class="notes">
             Picking the right abstractions, or designing interfaces, or APIs,
             or whatever you call them -- is *hard*. There's no rulebook, and
             no algorithms to help you, and doing it right requires one thing
             above all others: that you understand the *people* who will be
             using what you make.
+
+            And that's what Mazz is going to talk to you about.
+
+            -----
 
             The first thing you need to do is stop. Stop and think. Think then
             think harder and then think some more. 
@@ -326,8 +340,19 @@
           </aside>
         </section>
 
-        <section>
-          <h2>The end slide</h2>
+        <section class="about">
+          <div class="about-gds">
+            <h3>Government Digital Service</h3>
+            <p><a href="//digital.cabinetoffice.gov.uk">http://digital.cabinetoffice.gov.uk</a></p>
+          </div>
+
+          <div class="about-us">
+            <h3>Mazz Mosley</h3>
+            <p><a href="//twitter.com/mnowster">@mnowster</a></p>
+
+            <h3>Nick Stenning</h3>
+            <p><a href="//twitter.com/nickstenning">@nickstenning</a></p>
+          </div>
         </section>
 
 			</div>
