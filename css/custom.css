@@ -5,6 +5,7 @@
   height: 100%;
   min-width: 100%;
   min-height: 100%;
+  font-family: "Gill Sans";
 }
 
 .slides section.fullscreen {
@@ -20,8 +21,13 @@
   background-position: center center;  
 }
 
-.slides blockquote {
+.slides section blockquote {
   margin-top: 1em;
+  border: none;
+  box-shadow: none;
+}
+
+.slides section img {
   border: none;
   box-shadow: none;
 }
@@ -60,4 +66,43 @@
                0 5px 10px rgba(255,255,255,.25),
                0 10px 10px rgba(255,255,255,.2),
                0 20px 20px rgba(255,255,255,.15);
+}
+
+.about h3 {
+  margin: 0;
+}
+
+.about p {
+  margin: 0 0 20px 0;
+}
+
+.about-us {
+  text-align: left;
+  width: 35%;
+}
+
+.about-us h3, .about-us p {
+  margin-left: 60px;
+}
+
+.about-gds {
+  text-align: right;
+  float: right;
+  width: 65%;
+}
+
+.about-gds h3, .about-gds p {
+  margin-right: 60px;
+}
+
+.slides .attribution {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  font-size: 20px;
+}
+
+.slides .light a {
+  color: #eee;
+  text-shadow: #222 1px 2px 2px;
 }
