@@ -72,6 +72,11 @@
   margin: 0;
 }
 
+.about h4 {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+
 .about p {
   margin: 0 0 20px 0;
 }
@@ -91,7 +96,7 @@
   width: 65%;
 }
 
-.about-gds h3, .about-gds p {
+.about-gds h3, .about-gds h4, .about-gds p {
   margin-right: 60px;
 }
 
